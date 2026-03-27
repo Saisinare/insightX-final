@@ -1,0 +1,9 @@
+.layout {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin-top: 90px;
+  width: 100%;
+}

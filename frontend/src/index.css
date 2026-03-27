@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/GTWalsheimPro-Medium.ttf') format('truetype');
+}
+
+@theme {
+  /* Custom Colors */
+  --color-primary-50: #e6e6ff;
+  --color-primary-100: #b3b3ff;
+  --color-primary-200: #8080ff;
+  --color-primary-300: #4d4dff;
+  --color-primary-400: #1a1aff;
+  --color-primary-500: #0400ff;
+  --color-primary-600: #0300cc;
+  --color-primary-700: #020099;
+  --color-primary-800: #020066;
+  --color-primary-900: #010033;
+  
+  --color-dark: #000000;
+  --color-dark-lighter: #05060a;
+  --color-dark-card: #1a1a1a;
+  
+  /* Custom Font */
+  --font-family-custom: 'MyFont', Arial, Helvetica, sans-serif;
+  
+  /* Custom Shadows */
+  --shadow-primary: 0 4px 8px 0 rgba(4, 0, 255, 0.596), 0 6px 20px 0 rgba(38, 0, 255, 0.507);
+  --shadow-primary-hover: 0 6px 12px 0 rgba(4, 0, 255, 0.8), 0 8px 25px 0 rgba(38, 0, 255, 0.7);
+}
+
+@layer base {
+  :root {
+    font-family: 'MyFont', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: lighter;
+
+    color-scheme: dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    font-weight: 500;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  body {
+    font-family: 'MyFont', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background-color: black;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@utility bg-gradient-primary {
+  background: linear-gradient(30deg, #0d0152, rgb(4, 0, 255));
+}
+
+@utility bg-gradient-radial {
+  background: radial-gradient(circle, blue, rgb(72, 27, 236));
+}
+

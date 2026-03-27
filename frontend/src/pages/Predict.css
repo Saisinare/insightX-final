@@ -1,0 +1,313 @@
+.page {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 15vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  height: 83vh;
+  width: 98vw;
+  border-radius: 1rem;
+  display: flex;
+  background: #05060af3;
+  overflow: hidden;
+}
+
+.form-container {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.model-selection,
+.type-selection {
+  height: 2rem;
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  border: 0.4px solid black;
+  column-gap: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.option {
+  height: 80%;
+  width: 5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  transition: all 0.3s ease-in;
+}
+
+.model-selection {
+  width: 41.5rem;
+  height: 3rem;
+}
+
+.model-option {
+  height: 80%;
+  width: 20rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgb(20, 20, 20);
+  transition: all 0.3s ease-in;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.model-selection .model-option:hover,
+.type-selection .option:hover {
+  background: blue;
+  color: white;
+}
+
+.type-selected {
+  background-color: blue;
+}
+
+.model-selected {
+  background-color: blue;
+}
+
+.input-fields {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+}
+
+.selection-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.field input {
+  height: 3rem;
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+  outline: none;
+  padding: 0 1rem;
+  width: 10rem;
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: rgb(22, 21, 21);
+}
+
+.field-input {
+  display: flex;
+  flex-direction: row;
+}
+
+#name {
+  text-align: center;
+  background-color: transparent;
+  font-size: 1rem;
+  width: 45vw;
+  border-bottom: 1px solid rgb(32, 32, 32);
+  border-radius: 0.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.input-section {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  gap: 2rem;
+  flex: 1;
+}
+
+.submit-section {
+  display: flex;
+  height: fit-content;
+  padding: 1vh 0;
+  align-items: center;
+  height: 20vh;
+  background: radial-gradient(circle, blue, rgb(55, 43, 226));
+  border-radius: 1rem;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#submit-btn {
+  padding: 1rem 5rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+  border-radius: 0.5rem;
+  border: none;
+  background: radial-gradient(circle, rgb(8, 8, 8), rgb(2, 2, 2));
+  font-weight: bold;
+  color: #ccc;
+  transition: all 1s ease-out;
+}
+
+#submit-btn:hover {
+  color: white;
+}
+
+.field .unit {
+  height: 3rem;
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+  padding: 0 1rem;
+  background-color: rgb(22, 21, 21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.6rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 1rem;
+}
+
+label {
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+#submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Result Section */
+.result-section {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: rgba(5, 6, 10, 0.8);
+  border-radius: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.result-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.prediction {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.safe {
+  color: #00ff00;
+}
+
+.failure {
+  color: #ff0000;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-fields {
+    padding-left: 0;
+    padding-top: 3vh;
+    width: 100%;
+  }
+
+  .model-selection {
+    width: 100%;
+    max-width: 41.5rem;
+  }
+
+  #name {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: 12vh;
+  }
+
+  .container {
+    width: 95vw;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .input-fields {
+    width: 100%;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .field input {
+    width: 100%;
+  }
+
+  .model-selection {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .model-option {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .type-selection {
+    width: 100%;
+  }
+
+  #submit-btn {
+    padding: 1rem 3rem;
+    font-size: 16px;
+  }
+}

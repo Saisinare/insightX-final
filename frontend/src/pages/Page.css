@@ -1,0 +1,236 @@
+.page-container {
+  min-height: calc(100vh - 90px);
+  padding: 3rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(30deg, #0d0152, rgb(4, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-content > p {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 3rem;
+  margin-left: 0;
+}
+
+/* Feature Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: rgba(5, 6, 10, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: rgb(4, 0, 255);
+  box-shadow: 0 4px 8px 0 rgba(4, 0, 255, 0.596);
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(4, 0, 255);
+}
+
+.feature-card p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-left: 0;
+}
+
+/* Explore Content */
+.explore-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.explore-section {
+  background: rgba(5, 6, 10, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #333;
+}
+
+.explore-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(4, 0, 255);
+}
+
+.explore-section p {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-left: 0;
+}
+
+.explore-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.explore-section li {
+  color: #ccc;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.explore-section li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: rgb(4, 0, 255);
+  font-weight: bold;
+}
+
+/* History Table */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: rgba(5, 6, 10, 0.8);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.history-table thead {
+  background: linear-gradient(30deg, #0d0152, rgb(4, 0, 255));
+}
+
+.history-table th,
+.history-table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.history-table th {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.history-table tbody tr {
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+.history-table tbody tr:hover {
+  background: rgba(4, 0, 255, 0.1);
+}
+
+.safe {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.failure {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.loading,
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.dashboard-card {
+  background: rgba(5, 6, 10, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #333;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  border-color: rgb(4, 0, 255);
+  box-shadow: 0 4px 8px 0 rgba(4, 0, 255, 0.596);
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.stat {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 0;
+  background: linear-gradient(30deg, #0d0152, rgb(4, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat.alert {
+  background: linear-gradient(30deg, #ff0000, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat.success {
+  background: linear-gradient(30deg, #00ff00, #00cc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-content h1 {
+    font-size: 2rem;
+  }
+
+  .feature-grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-table {
+    font-size: 0.9rem;
+  }
+
+  .history-table th,
+  .history-table td {
+    padding: 0.5rem;
+  }
+}
