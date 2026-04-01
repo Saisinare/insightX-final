@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/GTWalsheimPro-Medium.ttf");
+}
+
+/* Page wrapper matching site theme */
+.analysis-page {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: black;
+  padding-top: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "MyFont", Arial, sans-serif;
+  color: #ccc;
+}
+
+/* Container matching site card style */
+.analysis-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #05060af3;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* Header section */
+.analysis-header {
+  background: radial-gradient(circle, blue, rgb(55, 43, 226));
+  color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.analysis-header h4 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Form styling */
+.analysis-form {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgb(22, 21, 21);
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 0.5rem;
+  color: white;
+  font-family: "MyFont", Arial, sans-serif;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus {
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(4, 0, 255, 0.5);
+}
+
+.form-text-hint {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+/* Submit button */
+.submit-button {
+  padding: 1rem 5rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "MyFont";
+  border-radius: 0.5rem;
+  border: none;
+  background: blue;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(4, 0, 255, 0.596),
+    0 6px 20px 0 rgba(38, 0, 255, 0.507);
+}
+
+.submit-button:hover {
+  background: radial-gradient(circle, blue, rgb(72, 27, 236));
+  box-shadow: 0 6px 12px 0 rgba(4, 0, 255, 0.8),
+    0 8px 24px 0 rgba(38, 0, 255, 0.7);
+}
+
+/* Results section */
+.results-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgb(32, 32, 32);
+}
+
+.results-section h5 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* Plotly figure container */
+#plotly-figure {
+  background-color: rgb(15, 15, 15);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature table styling */
+.features-table {
+  width: 100%;
+  background-color: rgb(22, 21, 21);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.features-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.features-table th {
+  background: radial-gradient(circle, blue, rgb(55, 43, 226));
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.features-table td {
+  padding: 0.75rem 1rem;
+  color: #ccc;
+  border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.features-table tr:last-child td {
+  border-bottom: none;
+}
+
+.features-table tr:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid rgb(32, 32, 32);
+  margin: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .analysis-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .analysis-header h4 {
+    font-size: 1.5rem;
+  }
+
+  .submit-button {
+    padding: 0.75rem 3rem;
+    font-size: 16px;
+  }
+
+  .results-section h5 {
+    font-size: 1.2rem;
+  }
+}
