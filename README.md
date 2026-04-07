@@ -17,6 +17,29 @@ The system is designed around the challenge of unplanned industrial downtime: by
 
 ---
 
+## 📸 Screenshots
+
+### Home
+![Home](screenshots/home.png)
+
+### Predict
+![Predict](screenshots/predict.png)
+
+### Analytics
+![Analytics](screenshots/analytics.png)
+
+### Explore
+![Explore](screenshots/explore.png)
+
+![Explore 2](screenshots/explore2.png)
+
+![Explore 3](screenshots/explore3.png)
+
+### Login
+![Login](screenshots/login.png)
+
+---
+
 ## ✨ Features
 
 - **ML-Powered Predictions** — Submit sensor readings and receive instant failure probability predictions using a trained Scikit-learn model
@@ -185,29 +208,6 @@ The prediction engine is powered by a Scikit-learn model trained on industrial s
 - **Tool Wear (min)**
 
 The model predicts binary failure outcomes and classifies failure type (Tool Wear, Heat Dissipation, Power, Overstrain).
-
----
-
-## 📸 Screenshots
-
-### Home
-![Home](screenshots/home.png)
-
-### Predict
-![Predict](screenshots/predict.png)
-
-### Analytics
-![Analytics](screenshots/analytics.png)
-
-### Explore
-![Explore](screenshots/explore.png)
-
-![Explore 2](screenshots/explore2.png)
-
-![Explore 3](screenshots/explore3.png)
-
-### Login
-![Login](screenshots/login.png)
 
 ---
 
