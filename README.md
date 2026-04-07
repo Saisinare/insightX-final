@@ -188,7 +188,30 @@ The model predicts binary failure outcomes and classifies failure type (Tool Wea
 
 ---
 
-## 📸 UI Highlights
+## 📸 Screenshots
+
+### Home
+![Home](screenshots/home.png)
+
+### Predict
+![Predict](screenshots/predict.png)
+
+### Analytics
+![Analytics](screenshots/analytics.png)
+
+### Explore
+![Explore](screenshots/explore.png)
+
+![Explore 2](screenshots/explore2.png)
+
+![Explore 3](screenshots/explore3.png)
+
+### Login
+![Login](screenshots/login.png)
+
+---
+
+## 🖥 UI Highlights
 
 - Dark theme with blue gradient accents
 - Backdrop blur navigation bar
@@ -218,7 +241,7 @@ InsightX uses JWT-based authentication managed through a global React context (`
 ## 👤 Author
 
 **Sai Sinare**
-ENTC Student @ Vishwakarma Institute of Technology, Pune
+ECE Student @ Vishwakarma Institute of Technology, Pune
 [GitHub](https://github.com/Saisinare)
 
 ---
